@@ -1,5 +1,5 @@
 ﻿Public Class DataSiswa
-    Private Sub TextAngka_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextNISN.KeyPress
+    Private Sub TextBoxAngka_KeyPress(sender As Object, e As KeyPressEventArgs)
         ' Cek apakah karakter yang dimasukkan adalah angka atau kontrol seperti Backspace atau Delete
         If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
             ' Jika bukan angka atau kontrol, batalkan input dengan menandai event sebagai sudah di-handle
@@ -7,7 +7,6 @@
             MessageBox.Show("Nilai harus berupa angka.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
-
     Private Sub TextNISN_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextNISN.KeyPress, TextNama.KeyPress
         If e.KeyChar = ChrW(Keys.Enter) Then
             e.Handled = True
@@ -125,13 +124,10 @@
 
         End If
     End Sub
+
     Private Sub Data_Siswa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextHarian.MaxLength = 3
         TextSTS.MaxLength = 3
         TextSAS.MaxLength = 3
-    End Sub
-
-    Private Sub TextHarian_TextChanged(sender As Object, e As EventArgs) Handles TextHarian.TextChanged
-
     End Sub
 End Class
