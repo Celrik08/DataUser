@@ -172,6 +172,7 @@ Partial Class DataSiswa
         ' 
         ' TextAkhir
         ' 
+        TextAkhir.Enabled = False
         TextAkhir.Location = New Point(113, 212)
         TextAkhir.Name = "TextAkhir"
         TextAkhir.Size = New Size(125, 28)

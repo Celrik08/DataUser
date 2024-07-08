@@ -147,6 +147,7 @@ Partial Class DataPegawai
         ' 
         ' TextGaji
         ' 
+        TextGaji.Enabled = False
         TextGaji.Location = New Point(145, 148)
         TextGaji.Name = "TextGaji"
         TextGaji.Size = New Size(151, 28)
@@ -154,6 +155,7 @@ Partial Class DataPegawai
         ' 
         ' TextTunjangan
         ' 
+        TextTunjangan.Enabled = False
         TextTunjangan.Location = New Point(145, 182)
         TextTunjangan.Name = "TextTunjangan"
         TextTunjangan.Size = New Size(151, 28)
@@ -161,6 +163,7 @@ Partial Class DataPegawai
         ' 
         ' TextZakat
         ' 
+        TextZakat.Enabled = False
         TextZakat.Location = New Point(145, 216)
         TextZakat.Name = "TextZakat"
         TextZakat.Size = New Size(151, 28)
@@ -168,6 +171,7 @@ Partial Class DataPegawai
         ' 
         ' TextPajak
         ' 
+        TextPajak.Enabled = False
         TextPajak.Location = New Point(145, 250)
         TextPajak.Name = "TextPajak"
         TextPajak.Size = New Size(151, 28)
@@ -175,6 +179,7 @@ Partial Class DataPegawai
         ' 
         ' TextTotal
         ' 
+        TextTotal.Enabled = False
         TextTotal.Location = New Point(145, 284)
         TextTotal.Name = "TextTotal"
         TextTotal.Size = New Size(151, 28)
